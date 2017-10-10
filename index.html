@@ -1,0 +1,126 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<title>VISNL</title>
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/night.css">
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+					<section data-state='openingslide' >
+						<h1>Data visualisatie of data voor visualisatie? </h1>
+						<h3>Niene Boeijen</h3>
+					</section>
+					<section data-background-image="img/kaarten.png" data-background-size="contain">
+						<h1 style="color:black;">Wat is er nu?</h1>
+					</section>
+					<section>
+						<h1>maar...</h1>
+						<img src="img/gebruiker.jpg">
+					</section>
+					<section>
+						<h1> en.. </h1>
+						<img src="img/beheerder.jpg">
+					</section>
+				</section>
+				<section>
+					<section >
+						<h2>Kaart is niet makkelijk aan te passen... </h2>
+						<img src="img/hoe.jpg">
+					</section>
+					<section>
+						<p>Geoserver - SLD's zijn ingewikkeld</p>
+						<p>Data sets zijn niet makkelijk te combineren</p>
+						<p>Data in Qgis is moeilijk te stijlen (ook niet makkelijk met SLD)</p>
+						<p>Te veel lagen en data in WMS </p>
+					</section>
+				</section>
+				<section>
+					<section>
+						<h2>Gebruiken we wel de juiste techniek?</h2>
+					</section>
+					<section>
+						<p>Geoserver langzaam</p>
+						<p>ingewikkelde SLD's</p>
+						<p>meerdere tile sets opslaan.. </p>
+						<p>langzaam update process</p>
+					</section>
+					<section>
+						<img src="img/snel.jpg">
+					</section>
+				</section>
+				<section>
+					<section>
+						<h2>Huidig data model ondersteunt geen snelle en makkelijke visualisaties!</h2>
+						<img src="img/comic.png">
+					</section>
+
+				</section>
+				<section>
+					<section>
+						<h1>Onze oplossing?</h1>
+						<img src="https://media.giphy.com/media/BYBV1IkkWExHO/giphy.gif">
+					</section>
+					<section>
+						<img src="img/datavis.jpg">
+						<h1>VISnl</h1>
+					</section>
+					<section>
+						<h2>1. Nieuwe vis data stack bouwen</h2>
+						<p>	zodat </p>
+						<h2>2. Snel en makkelijk meerdere vis kunnen maken</h2>
+					</section>
+				</section>
+				<section>
+					<section>
+						<h2>Wat en hoe?</h2>
+						<img src="img/dx.png">
+					</section>
+					<section>
+						<img src="img/overzicht.jpg" height=680px>
+					</section>
+					<section>
+						<ul>
+							<li>Makkelijk snel actueel te houden</li>
+							<li>Proces goed gedocumenteerd</li>
+							<li>Engels</li>
+							<li>WebMercator</li>
+							<li>Grokable</li>
+							<li>Consistent</li>
+							<li>Gebaseerd op NL data (BGT, BRT)</li>
+							<li>Object ID behouden </li>
+							<li>Uit te bereiden met meerdere datasets</li>
+						</ul>
+					</section>
+					<section>
+						<blockquote>Elke nitwit moet een kaart kunnen maken</blockquote>
+						<blockquote>Elke kenner moet een gedetailleerde kaart kunnen maken</blockquote>
+						<img src="img/wow.jpg" width="500px">
+					</section>
+				</section>
+			</div>
+		</div>
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+		<script>
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				history: true,
+
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+</html>
