@@ -19,14 +19,17 @@
 					</section>
 					<section data-background-image="img/kaarten.png" data-background-size="contain">
 						<h1 style="color:black;">Wat is er nu?</h1>
+            <p class="fragment" style="color:black;">veel verschillende visualisaties</p>
 					</section>
 					<section>
 						<h1>maar...</h1>
 						<img src="img/gebruiker.jpg">
+            <p class="fragment" style="position: absolute;bottom:-15px; left:20px">Geen een visualisatie zal ooit voor iedereen geschikt zijn</p>
 					</section>
 					<section>
 						<h1> en.. </h1>
 						<img src="img/beheerder.jpg">
+            <p class="fragment" style="position: absolute;bottom:-15px; left:20px">de huidige technologie schaalt niet makkelijk</p>
 					</section>
 				</section>
 				<section>
@@ -60,6 +63,12 @@
 						<h2>Huidig data model ondersteunt geen snelle en makkelijke visualisaties!</h2>
 						<img src="img/comic.png">
 					</section>
+          <section>
+            <p>BGT geschikt voor beheer/registratie, niet visualisatie</p>
+            <p>Door lijn/vlak tweedeling moeilijk om consistentie te krijgen</p>
+            <p>Diepe kennis van meerdere datasets nodig om tot een consistente visualisatie te komen</p>
+
+          </section>
 
 				</section>
 				<section>
@@ -72,7 +81,7 @@
 						<h1>VISnl</h1>
 					</section>
 					<section>
-						<h2>1. Nieuwe vis data stack bouwen</h2>
+						<h2>1. Nieuwe vis dataset bouwen</h2>
 						<p>	zodat </p>
 						<h2>2. Snel en makkelijk meerdere vis kunnen maken</h2>
 					</section>
@@ -81,11 +90,11 @@
 					<section>
 						<h2>Wat en hoe?</h2>
 						<img src="img/dx.png">
+            <p class="fragment">Het gaat niet om 'user experience' -- de perfecte kaart voor alle gebruikers</p>
+            <p class="fragment">maar om 'developer experience' -- het moet makkelijk zijn meerdere kaarten te kunnen maken</p>
 					</section>
 					<section>
-						<img src="img/overzicht.jpg" height=680px>
-					</section>
-					<section>
+            <h2>Voorwaarden/doelen</h2>
 						<ul>
 							<li>Makkelijk snel actueel te houden</li>
 							<li>Proces goed gedocumenteerd</li>
@@ -95,15 +104,44 @@
 							<li>Consistent</li>
 							<li>Gebaseerd op NL data (BGT, BRT)</li>
 							<li>Object ID behouden </li>
-							<li>Uit te bereiden met meerdere datasets</li>
+							<li>Uit te breiden met meerdere datasets</li>
 						</ul>
+            <p>of kortom ... </p>
 					</section>
 					<section>
 						<blockquote>Elke nitwit moet een kaart kunnen maken</blockquote>
 						<blockquote>Elke kenner moet een gedetailleerde kaart kunnen maken</blockquote>
 						<img src="img/wow.jpg" width="500px">
 					</section>
+					<section>
+            <h2>Opzet</h2>
+						<img style="position:relative;left:100px" src="img/overzicht.jpg" height=600px>
+            <p class="fragment" style="position:absolute;left:-100px;top:40%;width:400px;font-size: .8em">transformeer brondatasets naar eenduidige nieuwe set geschikt voor visualisatie</p>
+            <p class="fragment" style="position:absolute;left:-100px;top:67%;width:400px;font-size: .8em">proces is goed gedocumenteerd en herhaalbaar -- makkelijk bij te houden, en ook door anderen op te zetten</p>
+            <p class="fragment" style="position:absolute;left:-100px;top:15%;width:400px;font-size: .8em">Op basis van deze dataset zijn makkelijk meerdere stijl-outputs te maken</p>
+					</section>
+          <section>
+            <h2>What precies?</h2>
+            <p>Maak een nieuwe consistente classificatie van objecten en attributen</p>
+            <p>Gebruik een hierarchie: 4-5 hoofdklasses zodat je binnen 5 minuten een kaart kan maken</p>
+            <p>Daaronder is alle detail behouden in subklasses zodat de kaart nog volledig aangepast kan worden.</p>
+          </section>
+          <section>
+            <p>behoud alleen attributen die nuttig zijn voor visualisatie</p>
+            <ul>
+              <li>minder data -> minder opslag en transport</li>
+              <li>minder ruis voor cartograaf</li>
+            </ul>
+          </section>
+          <section>
+            <h2>Op meerdere manieren ontsluiten.</h2>
+            <p>PostGIS direct naar QGIS, daar stylen</p>
+            <p>SLDs geoptimaliseerd voor Geoserver</p>
+            <p>een of meerdere vector tilesets voor specifieke visualisaties</p>
 				</section>
+        <section>
+          <p>test en documenteer de hele stack</p>
+        </section>
 			</div>
 		</div>
 		<script src="lib/js/head.min.js"></script>
